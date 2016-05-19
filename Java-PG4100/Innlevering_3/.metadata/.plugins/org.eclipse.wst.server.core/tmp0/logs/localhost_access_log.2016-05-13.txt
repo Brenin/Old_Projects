@@ -1,0 +1,16 @@
+127.0.0.1 - - [13/May/2016:13:21:02 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:21:08 +0200] "GET /PrimeChecker/ HTTP/1.1" 200 968
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:21:08 +0200] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:21:10 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 200 1174
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:21:13 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 200 1174
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:21:41 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 200 1180
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:27:07 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 200 1169
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:30:03 +0200] "GET /PrimeChecker/ HTTP/1.1" 200 968
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:30:05 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 404 1044
+127.0.0.1 - - [13/May/2016:13:30:18 +0200] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:30:24 +0200] "GET /PrimeChecker HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:30:24 +0200] "GET /PrimeChecker/ HTTP/1.1" 200 968
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:30:27 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 200 1174
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:30:29 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 200 1173
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:30:31 +0200] "POST /PrimeChecker/primeServlet HTTP/1.1" 200 1176
+0:0:0:0:0:0:0:1 - - [13/May/2016:13:47:49 +0200] "GET /Quizzie/ HTTP/1.1" 404 1010

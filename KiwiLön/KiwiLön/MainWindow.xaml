@@ -1,0 +1,46 @@
+﻿<Window x:Class="KiwiLön.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KiwiLön"
+        mc:Ignorable="d"
+        Title="Kiwi Lön" Height="350" Width="600" ResizeMode="NoResize">
+    <Grid>
+        <Image x:Name="Logo" Source="D:\Skola\KiwiLön\Images\img.png" HorizontalAlignment="Left" Height="47" Margin="457,264,0,0" VerticalAlignment="Top" Width="125" RenderTransformOrigin="0.501,1.821"/>
+
+        <Button x:Name="HourBasic" Content="Add" Click="HourWeekday_Click" HorizontalAlignment="Left" Margin="418,28,0,0" VerticalAlignment="Top" Width="49" Height="23"/>
+        <Button x:Name="HourSaturday" Content="Add" Click="HourSaturday_Click" HorizontalAlignment="Left" Margin="418,84,0,0" VerticalAlignment="Top" Width="49" RenderTransformOrigin="-0.156,0.372" Height="23"/>
+        <Button x:Name="HourSunday" Content="Add" Click="HourSunday_Click" HorizontalAlignment="Left" Margin="418,140,0,0" VerticalAlignment="Top" Width="49" Height="23"/>
+        <Button x:Name="Payment" Content="Salary" Click="Salary_Click" HorizontalAlignment="Left" Margin="418,196,0,0" VerticalAlignment="Top" Width="49" Height="23"/>
+        <Button x:Name="Taxes" Content="Taxes" Click="Taxes_Click" HorizontalAlignment="Left" Margin="418,224,0,0" VerticalAlignment="Top" Width="49" Height="23"/>
+        <Button x:Name="reset" Content="Reset" Click="reset_Click" HorizontalAlignment="Left" Margin="267,264,0,0" VerticalAlignment="Top" Width="90" Height="47"/>
+        <Button x:Name="info" Content="Info" Click="info_Click" HorizontalAlignment="Left" Margin="362,264,0,0" VerticalAlignment="Top" Width="90" Height="47"/>
+
+        <TextBox x:Name="Salary_Box" HorizontalAlignment="Left" Height="163" Margin="472,28,0,0" TextWrapping="Wrap" Text="Löns trinn&#xD;&#xA;Under 16 = 110.15&#xD;&#xA;Under 18 = 113.15&#xA;Trinn 1 = 148.77&#xA;Trinn 2 = 149.62&#xA;Trinn 3 = 151.70&#xA;Trinn 4 = 155.29&#xA;Trinn 5 = 161.04&#xA;Trinn 6 = 179.65&#xA;Lås ansvar är 6 kr/h" VerticalAlignment="Top" Width="112"/>
+        <TextBox x:Name="textBoxW1" HorizontalAlignment="Left" Height="23" Margin="362,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBoxW2" HorizontalAlignment="Left" Height="23" Margin="362,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBoxSa1" HorizontalAlignment="Left" Height="23" Margin="362,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBoxSa2" HorizontalAlignment="Left" Height="23" Margin="362,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBoxSu1" HorizontalAlignment="Left" Height="23" Margin="362,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBoxSu2" HorizontalAlignment="Left" Height="23" Margin="362,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBoxSalary" HorizontalAlignment="Left" Height="23" Margin="362,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="textBoxTaxes" HorizontalAlignment="Left" Height="23" Margin="362,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51"/>
+        <TextBox x:Name="DisplayBox" HorizontalAlignment="Left" Height="231" Margin="10,28,0,0" TextWrapping="Wrap" Text="Här ska jag visa info om timmar och totalen" VerticalAlignment="Top" Width="252"/>
+        <TextBox x:Name="Info_Box" HorizontalAlignment="Left" Height="47" Margin="10,264,0,0" TextWrapping="Wrap" Text="NB. Pauser är medräknade i dessa timmar som visas. " VerticalAlignment="Top" Width="252"/>
+
+        <Label x:Name="Weekday" Content="Vardag" HorizontalAlignment="Left" Margin="267,38,0,0" VerticalAlignment="Top" Height="27" Width="50"/>
+        <Label x:Name="Saturday" Content="Lördag" HorizontalAlignment="Left" Margin="267,94,0,0" VerticalAlignment="Top" Width="50"/>
+        <Label x:Name="Sunday" Content="Söndag" HorizontalAlignment="Left" Margin="267,150,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="W_Start" Content="Start" HorizontalAlignment="Left" Margin="322,28,0,0" VerticalAlignment="Top" Width="35" Height="23"/>
+        <Label x:Name="Sa_Start" Content="Start" HorizontalAlignment="Left" Margin="322,84,0,0" VerticalAlignment="Top" Width="35" Height="23"/>
+        <Label x:Name="Su_Start" Content="Start" HorizontalAlignment="Left" Margin="322,140,0,0" VerticalAlignment="Top" Width="35" Height="23"/>
+        <Label x:Name="W_Stopp" Content="Slut" HorizontalAlignment="Left" Margin="322,56,0,0" VerticalAlignment="Top" Width="35" Height="23"/>
+        <Label x:Name="Sa_Stopp" Content="Slut" HorizontalAlignment="Left" Margin="322,112,0,0" VerticalAlignment="Top" Width="35" Height="23"/>
+        <Label x:Name="Su_Stopp" Content="Slut" HorizontalAlignment="Left" Margin="322,168,0,0" VerticalAlignment="Top" Width="35" Height="23"/>
+
+        <CheckBox x:Name="checkBoxW" Content="Lås" HorizontalAlignment="Left" Margin="418,56,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxSa" Content="Lås" HorizontalAlignment="Left" Margin="418,112,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxSu" Content="Lås" HorizontalAlignment="Left" Margin="418,168,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

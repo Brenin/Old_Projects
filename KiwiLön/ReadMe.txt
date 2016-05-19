@@ -1,0 +1,1 @@
+Program I made for my old work to calculate salaries. It's a simple wpf done in C#

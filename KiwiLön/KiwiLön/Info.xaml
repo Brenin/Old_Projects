@@ -1,0 +1,13 @@
+﻿<Window x:Class="KiwiLön.Info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KiwiLön"
+        mc:Ignorable="d"
+        Title="Info" Height="232.905" Width="328.535">
+    <Grid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="181" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" TextChanged="textBox_TextChanged" Text="Brukaren för in start och slut i hela timmar &#xD;&#xA;(t ex 15-23) i dem vita boxarna beroende på vilken dag i veckan det är snack om.&#xD;&#xA;Om personen i fråga får betalt som lås för dessa timmar så markeras checkboxen för lås.&#xD;&#xA;&#xD;&#xA;Textrutan till vänster visar timmar, lön och skatt som har blivit registrerat.&#xD;&#xA;&#xD;&#xA;Reset knappen återställer alla uppförda timmar, lönen och skatten."/>
+
+    </Grid>
+</Window>

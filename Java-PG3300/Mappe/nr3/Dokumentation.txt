@@ -1,0 +1,4 @@
+Først måste ni laga en databas som heter music. Sen ska skriptet music.sql køras
+
+user = "root"
+password = ""
