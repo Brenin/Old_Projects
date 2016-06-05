@@ -1,6 +1,0 @@
-INDEX VERSION 1.3+C:\Users\Eirikur\Dropbox\Skola\År 2\Java PG4100\Innleveringar\Innlevering_2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2882974906.index
-4190616298.index
-648061971.index
-2462639923.index
-3282545777.index
